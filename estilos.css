@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    background: url(/img/fondo3.jpg) no-repeat center;
+    background-size: cover;
+    font-family: 'Carter One', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+header{
+    background: black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1{
+    margin: 0;
+    color: white;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255,255,255,.7);
+    display: flex;
+    gap: 30px;
+}
+
+#imagen{
+    width: 200px;
+}
+
+#palabra_a_adivinar{
+    height: 3em;
+}
+
+#palabra_a_adivinar span{
+    vertical-align: bottom;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block; /* sin esto, por ser un elemento de línea, no tomaría el width */
+}
+
+#letras button {
+    width: 40px; /* Ajusta el ancho del botón */
+    height: 40px; /* Ajusta la altura del botón */
+    padding: 0; /* Elimina el relleno adicional */
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex; /* Habilita el modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente dentro del botón */
+    align-items: center; /* Centra verticalmente dentro del botón */
+    font-size: 18px; /* Ajusta el tamaño de la letra */
+    font-weight: bold; /* Opcional: añade negrita */
+    color: white; /* Color del texto */
+    background-color: blue; /* Color del botón */
+    border: none; /* Elimina bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+header h1 {
+    background-color: #007bff;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 20px;
+}
+
+#imagen {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+}
+
+#palabra_a_adivinar {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#jugar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#jugar:hover {
+    background-color: #218838;
+}
+
+#resultado {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+#letras {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#letras button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#letras button:hover {
+    background-color: #0056b3;
+}
+
+#letras button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
